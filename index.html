@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Lofi Vibes</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Lofi Vibes</h1>
+    <main>
+      <section id="leftList">
+        <ul id="videoList"></ul>
+      </section>
+
+      <section id="videoDisplay">
+        <iframe
+          id="videoPlayer"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/fBxMJS_IplA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <button id="randomizeButton" type="submit">Randomize!</button>
+      </section>
+      <div id="rightForm">
+        <label for="newVideo">Add a new video!</label>
+        <form id="videoBtn" action="submit" method="post">
+          <label for="name">Video Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="url">Youtube Url</label>
+          <input type="url" id="url" name="url" required />
+
+          <label for="symbol">Select A Symbol</label>
+          <select id="symbol" name="symbol">
+            <option value="fa-lemon">
+              </i>Lemon
+            </option>
+            <option value="fa-leaf">
+              </i>Leaf
+            </option>
+            <option value="fa-seedling">
+              </i>seedling
+            </option>
+            <option value="fa-pepper-hot">
+              </i>Hot Pepper
+            </option>
+            <option value="fa-carrot">
+              </i>Carrot
+            </option>
+          </select>
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7618ee5568.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
